@@ -19,7 +19,7 @@ class Register extends React.Component {
         this.setState({registerPassword: event.target.value});
     }
     onSubmitRegister = () => {
-        fetch('https://ancient-tundra-76352.herokuapp.com//register', {
+        fetch('https://ancient-tundra-76352.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify(
